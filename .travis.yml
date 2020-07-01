@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - openjdk11
+  - oraclejdk11
 #for caching in travis.yml file
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
