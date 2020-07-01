@@ -10,10 +10,10 @@ VOLUME /tmp
 EXPOSE 9100
 
 # The application's jar file
-ARG JAR_FILE=target/websocket-demo-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/cicd-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} cicd-0.0.1-SNAPSHOT.jar
+ADD ${JAR_FILE} cicd.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/websocket-demo.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/cicd.jar"]
