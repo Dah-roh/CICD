@@ -1,7 +1,5 @@
 language: java
 jdk:
-  - oraclejdk11
-  - openjdk10
   - openjdk11
 #for caching in travis.yml file
 before_cache:
