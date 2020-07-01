@@ -13,7 +13,7 @@ EXPOSE 9100
 ARG JAR_FILE=target/websocket-demo-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} ebsocket-demo.jar
+ADD ${JAR_FILE} cicd-0.0.1-SNAPSHOT.jar
 
 # Run the jar file
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/websocket-demo.jar"]
